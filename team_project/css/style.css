@@ -46,3 +46,17 @@
     justify-content: center;
     gap: 1%;
   }
+
+  #nav{
+    background-color: OldLace;
+    margin: 0% auto 1%;
+    padding: 0.5em;
+    border: 3px solid #665544;
+    width: 90%;
+    text-align: center;
+  }
+
+  li{
+    display: inline;
+    padding: 0.5em;
+  }
