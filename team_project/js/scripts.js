@@ -1,6 +1,11 @@
 
 function rollDice(diceAmount) {
     //declare vars
+
+    if(diceAmount > 12) {
+        return false;
+    }
+
     var result = [];
     var simpleResult = '';
     var formNode = document.querySelector("form");
