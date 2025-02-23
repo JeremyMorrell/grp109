@@ -47,7 +47,6 @@ function rollDice(diceAmount) {
     simpleResult = result + ' | Sum = ' + diceSum;
     document.getElementById("shortResult").innerHTML = '';
     document.getElementById("shortResult").innerHTML = simpleResult;
-    formNode.after(simpleResult);
     //Put the things on the page
     document.getElementById("diceResult").innerHTML = diceMarkup;
     //Surely we need an output, right?
