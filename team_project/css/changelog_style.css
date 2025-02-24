@@ -1,0 +1,59 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'MontserratBold';
+    font-weight: normal;
+    font-style: normal;
+    color: #665544
+  }
+  
+  .container {
+    width: 90%;
+    background-color: OldLace;
+    height: 17em;
+    padding: 0.5em;
+    border: 3px solid #665544;
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titles {
+    padding: 0.5em;
+    font-weight: bold;
+  }
+  
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+  }
+
+  .individual{
+    flex: 1;
+    max-width: %;
+    background-color: OldLace;
+    height: 13em;
+    padding: 0.5em;
+    border: 3px solid #665544;
+   
+    
+  }
+
+  #nav{
+  background-color: OldLace;
+  margin: 0% auto 1%;
+  padding: 0.5em;
+  border: 3px solid #665544;
+  width: 90%;
+  text-align: center;
+  }
+  
+  li{
+  display: inline;
+  padding: 0.5em;
+  }
