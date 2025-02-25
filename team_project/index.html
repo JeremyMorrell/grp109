@@ -28,7 +28,9 @@
           <form onsubmit="return false;">
             <label for="dieCount">How many dice do you want to roll?</label><br><br>
             <input type="number" id="dieCount" name="dieCount" placeholder="Enter here..." max="12"><br><br>
-            <input type="submit" value="Roll" onclick="rollDice(document.getElementById('dieCount').value);">
+            
+             <img src="./images/image.png" alt="Dice Bag" id="diceBag" onclick="rollDice(document.getElementById('dieCount').value);" style="cursor: pointer; width: 150px;">
+            
           </form>
           <div id="shortResult"></div>
         </div>
