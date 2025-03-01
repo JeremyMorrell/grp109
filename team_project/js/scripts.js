@@ -8,7 +8,7 @@ function rollDice(diceAmount) {
     //Start markup for parent dice div
     var diceMarkup = '<div id="diceDisplay">';
 
-    if(diceAmount > 12 || diceAmount == 'null' || diceAmount == '0') {
+    if(diceAmount > 12 || diceAmount == '' || diceAmount == '0') {
         document.getElementById("shortResult").innerHTML = 'Please select a number of dice between one and twelve';
         return false;
     }
