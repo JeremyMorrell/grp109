@@ -2,15 +2,17 @@
 function rollDice(diceAmount) {
     //declare vars
 
-    if(diceAmount > 12) {
-        return false;
-    }
-
     var result = [];
     var simpleResult = '';
     var formNode = document.querySelector("form");
     //Start markup for parent dice div
     var diceMarkup = '<div id="diceDisplay">';
+
+    if(diceAmount > 12 || diceAmount == 'null' || diceAmount == '0') {
+        document.getElementById("shortResult").innerHTML = 'Please select a number of dice between one and twelve';
+        return false;
+    }
+
     //Roll the dice, did I mention my middle name is 'danger'?
     for (i = 0; i < diceAmount; i++) {
         var singleRoll = '';
