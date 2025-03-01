@@ -50,6 +50,14 @@ input[type="submit"]{
 
 /*-- Dice Styles --*/
 
+#diceBag {
+  transition: 200ms ease-in-out;
+}
+
+#diceBag:hover {
+  scale: 1.05;
+}
+
 #diceResult {
 text-align: center;
 }
