@@ -57,3 +57,9 @@
   display: inline;
   padding: 0.5em;
   }
+
+  /*-- AV: changelog.html - Individual Wrapper Spacing --*/
+
+.wrapper.weekly-entry {
+  margin-top: 25px;
+}

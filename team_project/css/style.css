@@ -47,12 +47,6 @@ input[type="submit"]{
   gap: 1%;
 }
 
-/*-- AV: changelog.html - Individual Wrapper Spacing --*/
-
-.wrapper.weekly-entry {
-  margin-top: 25px;
-}
-
 /*-- Dice Styles --*/
 
 #diceBag { /* AV - 3/1 */
