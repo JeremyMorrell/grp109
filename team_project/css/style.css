@@ -115,6 +115,84 @@ justify-content: space-between;
 justify-content: center;
 }
 
+/*-- New Dice Styles: AV - 3/2 --*/                         
+
+.d4-dice {
+  max-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  background-image: url('../images/d4-dice.svg');
+  background-size: cover;
+}
+
+.d6-dice {
+  max-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  background-image: url('../images/d6-dice.svg');
+  background-size: cover;
+}
+
+.d8-dice {
+  max-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  background-image: url('../images/d8-dice.svg');
+  background-size: cover;
+}
+
+
+
+.d10-dice {
+  max-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  background-image: url('../images/d10-dice.svg');
+  background-size: cover;
+}
+
+.d12-dice {
+  max-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  background-image: url('../images/d12-dice.svg');
+  background-size: cover;
+}
+
+.d20-dice {
+  max-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  background-image: url('../images/d20-dice.svg');
+  background-size: cover;
+}
+
+
+.result-number {
+  position: absolute;
+  top: 37%;
+  font-size: 26px;
+  font-family: 'BebasNeueBold';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.one-digit {
+  left: 45%
+}
+
+.two-digit {
+  left: 39%
+}
+
+/*-- END: New Dice Styles --*/
+
 /* OTHER STYLES */
 
 #diceResult {
