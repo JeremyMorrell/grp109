@@ -5,7 +5,7 @@ function rollDice(diceAmount) {
     var result = [];
     var simpleResult = '';
     var formNode = document.querySelector("form");
-    var DiceMarkup = '';
+    var diceMarkup = '';
 
     if(diceAmount > 12 || diceAmount == '' || diceAmount == '0') {
         document.getElementById("shortResult").innerHTML = 'Please select a number of dice between one and twelve';
@@ -26,7 +26,7 @@ function rollDice(diceAmount) {
         diceMarkup += '<div class="result-number one-digit">' + singleRoll + '</div>'; //Inner result number
 
         diceMarkup += '</div>'; //Close parent div
-        
+
     }
     //Close result markup element
     diceMarkup += '</div>'
