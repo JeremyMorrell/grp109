@@ -196,7 +196,7 @@ justify-content: center;
 /* OTHER STYLES */
 
 #diceResult {
-display: flex;
+display: inline-block;
 align-items: center;
 justify-content: center;
 vertical-align: center;
