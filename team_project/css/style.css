@@ -47,7 +47,7 @@ input[type="submit"]{
   gap: 1%;
 }
 
-/*-- Dice Styles --*/
+/*-- New Dice Styles: AV - 3/2 --*/                         
 
 #diceBag { /* AV - 3/1 */
   transition: 200ms ease-in-out; 
@@ -56,66 +56,6 @@ input[type="submit"]{
 #diceBag:hover { /* AV - 3/1 */
   scale: 1.05;
 }
-
-#diceResult {
-text-align: center;
-}
-
-.first-face {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.second-face {
-display: flex;
-justify-content: space-between;
-}
-
-.second-face .pip:nth-of-type(2) {
-align-self: flex-end;
-}
-
-.third-face {
-display: flex;
-justify-content: space-between;
-}
-
-.third-face .pip:nth-of-type(2) {
-align-self: center;
-}
-
-.third-face .pip:nth-of-type(3) {
-align-self: flex-end;
-}
-
-.fourth-face, .sixth-face {
-display: flex;
-justify-content: space-between;
-}
-
-.fourth-face .column, .sixth-face .column {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.fifth-face {
-display: flex;
-justify-content: space-between;
-}
-
-.fifth-face .column {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.fifth-face .column:nth-of-type(2) {
-justify-content: center;
-}
-
-/*-- New Dice Styles: AV - 3/2 --*/                         
 
 .d4-dice {
   max-width: 100px;
@@ -141,8 +81,6 @@ justify-content: center;
   background-size: cover;
 }
 
-
-
 .d10-dice {
   max-width: 100px;
   min-height: 100px;
@@ -166,7 +104,6 @@ justify-content: center;
   background-image: url('../images/d20-dice.svg');
   background-size: cover;
 }
-
 
 .result-number {
   position: absolute;
