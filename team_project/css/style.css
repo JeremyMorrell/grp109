@@ -23,6 +23,16 @@ h1 {
   justify-content: center
 }
 
+/*-- AV 3/2 - Split containers up, absolute positioning conflict --*/
+.results-container {
+  width: 42%;
+  background-color: OldLace;
+  height: 20em;
+  padding: 1em;
+  border: 3px solid #665544;
+  justify-content: center
+}
+
 label {
   font-size: 1.7em;
   font-weight: bold;
