@@ -127,15 +127,6 @@ input[type="submit"]{
 
 /* OTHER STYLES */
 
-#diceResult {
-display: inline-block;
-align-items: center;
-justify-content: center;
-vertical-align: center;
-flex-wrap: wrap;
-align-content: center;
-}
-
 [class$="face"] {
 float: left;
 margin: 16px;
