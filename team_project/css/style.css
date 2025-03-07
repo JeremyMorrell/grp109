@@ -59,7 +59,7 @@ input[type="submit"]{
 }
 
 .d4-dice {
-  max-width: 100px;
+  width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d4-dice.svg');
@@ -67,7 +67,7 @@ input[type="submit"]{
 }
 
 .d6-dice {
-  min-width: 100px;
+  width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d6-dice.svg');
@@ -75,7 +75,7 @@ input[type="submit"]{
 }
 
 .d8-dice {
-  max-width: 100px;
+  width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d8-dice.svg');
@@ -83,7 +83,7 @@ input[type="submit"]{
 }
 
 .d10-dice {
-  max-width: 100px;
+  width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d10-dice.svg');
@@ -91,7 +91,7 @@ input[type="submit"]{
 }
 
 .d12-dice {
-  max-width: 100px;
+  width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d12-dice.svg');
@@ -99,7 +99,7 @@ input[type="submit"]{
 }
 
 .d20-dice {
-  max-width: 100px;
+  width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d20-dice.svg');
