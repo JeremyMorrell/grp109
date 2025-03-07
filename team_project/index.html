@@ -27,7 +27,16 @@
         <div class="container"> 
           <form onsubmit="return false;">
             <label for="die-count">How many dice do you want to roll?</label><br><br>
-            <input type="number" id="die-count" name="die-count" placeholder="Enter here..." max="12"><br><br>
+            <input type="number" id="die-count" name="die-count" placeholder="Enter here..." max="12"><br>
+            <select name="dice-type" id="dice-type">
+              <option selected value="">Select a Dice Type...</option>
+              <option value="d4-dice">D4</option>
+              <option value="d6-dice">D6</option>
+              <option value="d8-dice">D8</option>
+              <option value="d10-dice">D10</option>
+              <option value="d12-dice">D12</option>
+              <option value="d20-dice">D20</option>
+            </select><br>
             
              <img src="./images/image.png" alt="Dice Bag" id="dice-bag" onclick="rollDice(document.getElementById('die-count').value);" style="cursor: pointer; width: 150;">
             

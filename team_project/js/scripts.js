@@ -6,7 +6,10 @@ function rollDice(diceAmount) {
     var simpleResult = '';
     var formNode = document.querySelector("form");
     var diceMarkup = '';
+    var diceType = document.getElementByID("dice-type").value;
 
+    console.log(diceType);
+    
     if(diceAmount > 12 || diceAmount == '' || diceAmount == '0') {
         document.getElementById("short-result").innerHTML = 'Please select a number of dice between one and twelve';
         return false;
