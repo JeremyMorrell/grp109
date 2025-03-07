@@ -15,12 +15,34 @@ function rollDice(diceAmount) {
         return false;
     }
 
+    var diceSides = '';
+
+    switch (diceType) {
+        case 'd4-dice': diceSides = 4;
+        break;
+        case 'd6-dice': diceSides = 6;
+        break;
+        case 'd8-dice': diceSides = 8;
+        break;
+        case 'd10-dice': diceSides = 10;
+        break;
+        case 'd12-dice': diceSides = 12;
+        break;
+        case 'd20-dice': diceSides = 20;
+        break;
+        default: diceSides = 6;
+        break;
+    }
+
+    console.log(diceSides);
     //Roll the dice, did I mention my middle name is 'danger'?
     for (i = 0; i < diceAmount; i++) {
         var singleRoll = '';
-        var diceType = 'd6-dice';
+        //var diceType = 'd6-dice';
+
         //Simple Math Magic.
-        singleRoll = Math.floor(Math.random() * 6 + 1);
+        singleRoll = Math.floor(Math.random() * diceSides + 1);
+
         //Append roll result to final results array
         result.push(singleRoll);
         
