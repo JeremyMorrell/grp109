@@ -106,6 +106,10 @@ input[type="submit"]{
   background-size: cover;
 }
 
+.dice-result {
+  display: inline-block;
+}
+
 .result-number {
   position: absolute;
   top: 37%;
