@@ -115,11 +115,11 @@ input[type="submit"]{
   font-style: normal;
 }
 
-.one-digit {
+.result-number.one-digit {
   left: 45%
 }
 
-.two-digit {
+.result-number.two-digit {
   left: 39%
 }
 
