@@ -8,7 +8,7 @@ function rollDice(diceAmount) {
     var diceMarkup = '';
 
     if(diceAmount > 12 || diceAmount == '' || diceAmount == '0') {
-        document.getElementById("shortResult").innerHTML = 'Please select a number of dice between one and twelve';
+        document.getElementById("short-result").innerHTML = 'Please select a number of dice between one and twelve';
         return false;
     }
 
@@ -35,10 +35,10 @@ function rollDice(diceAmount) {
 
     //Append sum markup to result
     simpleResult = result + ' | Sum = ' + diceSum;
-    document.getElementById("shortResult").innerHTML = '';
-    document.getElementById("shortResult").innerHTML = simpleResult;
+    document.getElementById("short-result").innerHTML = '';
+    document.getElementById("short-result").innerHTML = simpleResult;
     //Put the things on the page
-    document.getElementById("diceResult").innerHTML = diceMarkup;
+    document.getElementById("dice-result").innerHTML = diceMarkup;
     //Surely we need an output, right?
     return result;
 };
