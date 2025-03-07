@@ -67,7 +67,7 @@ input[type="submit"]{
 }
 
 .d6-dice {
-  max-width: 100px;
+  min-width: 100px;
   min-height: 100px;
   position: relative;
   background-image: url('../images/d6-dice.svg');
