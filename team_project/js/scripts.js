@@ -7,16 +7,19 @@ function rollDice(diceAmount) {
     var formNode = document.querySelector("form");
     var diceMarkup = '';
     var diceType = document.getElementById("dice-type").value;
-
-    console.log(diceType);
+    var diceSides = '';
 
     if(diceAmount > 12 || diceAmount == '' || diceAmount == '0') {
         document.getElementById("short-result").innerHTML = 'Please select a number of dice between one and twelve';
         return false;
     }
 
-    var diceSides = '';
+    /*
+        It was either create an array and match key/value pairs, or switch statement. ~same length either way, this is easier.
+        
+        This takes the dice type select field value, then assigns the side value to the diceSides var to use with random number generation.
 
+    */
     switch (diceType) {
         case 'd4-dice': diceSides = 4;
         break;
@@ -34,7 +37,6 @@ function rollDice(diceAmount) {
         break;
     }
 
-    console.log(diceSides);
     //Roll the dice, did I mention my middle name is 'danger'?
     for (i = 0; i < diceAmount; i++) {
         var singleRoll = '';
