@@ -58,6 +58,10 @@ input[type="submit"]{
   scale: 1.05;
 }
 
+.dice-entry {
+  display: inline-block;
+}
+
 .d4-dice {
   width: 100px;
   min-height: 100px;

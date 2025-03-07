@@ -21,7 +21,7 @@ function rollDice(diceAmount) {
         //Append roll result to final results array
         result.push(singleRoll);
         
-        diceMarkup += '<div class="' + diceType + ' one-digit">'; //Start build - single die
+        diceMarkup += '<div class="' + diceType + ' one-digit dice-entry">'; //Start build - single die
 
         diceMarkup += '<div class="result-number one-digit">' + singleRoll + '</div>'; //Inner result number
 
