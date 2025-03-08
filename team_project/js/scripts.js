@@ -33,8 +33,6 @@ function rollDice(diceAmount) {
         break;
         case 'd20-dice': diceSides = 20;
         break;
-        default: diceSides = 6;
-        break;
     }
 
     //Roll the dice, did I mention my middle name is 'danger'?
