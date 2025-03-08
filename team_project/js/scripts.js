@@ -38,9 +38,9 @@ function rollDice(diceAmount) {
     }
 
     //Validator to ensure that a dice type is selected
-    if (diceSides = -1){
+    if (diceSides == -1){
         document.getElementById("short-result").innerHTML = 'Please select a dice type';
-        return false; //missing semicolon. Wasn't firing a warning off for some reason.
+        return false;
     }
 
     //Roll the dice, did I mention my middle name is 'danger'?
