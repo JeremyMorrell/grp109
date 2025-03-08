@@ -33,6 +33,14 @@ function rollDice(diceAmount) {
         break;
         case 'd20-dice': diceSides = 20;
         break;
+        default: diceSides = -1;
+        break;
+    }
+
+    //Validator to ensure that a dice type is selected
+    if (diceSides = -1){
+        document.getElementById("short-result").innerHTML = 'Please select a dice type';
+        return false
     }
 
     //Roll the dice, did I mention my middle name is 'danger'?
