@@ -77,3 +77,17 @@ function rollDice(diceAmount) {
 };
 
 /* rollDice(document.getElementById('dieCount'.value)) */
+
+// JS for the carousel on the bottom left 
+const names = ["Alan V", "Ethan N", "Jeremy M"];
+
+let current = 0;
+let interval = setInterval(updateSlide, 1500);
+let timer = 1.5;
+const nameLocation = document.getElementById("names");
+
+function updateSlide(){
+  current++;
+  current = current % names.length;
+  nameLocation.innerText = names[current];
+}

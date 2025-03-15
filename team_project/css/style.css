@@ -212,3 +212,30 @@ padding: 0.5em;
 #short-result{
   font-weight: bold;
 }
+
+/* Style for the information section at the bottom left */
+.wrapper2 {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  background-color: OldLace;
+  border: 3px solid #665544;
+  padding: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-weight: bold;
+  color: #665544;
+  margin-bottom: 5px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  color: #665544;
+}
