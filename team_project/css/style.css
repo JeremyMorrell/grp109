@@ -213,8 +213,8 @@ padding: 0.5em;
   font-weight: bold;
 }
 
-/* Style for the information section at the bottom left */
-.wrapper2 {
+/* Style for the credits section at the bottom left */
+.credits-wrapper {
   position: fixed;
   bottom: 25px;
   left: 25px;
@@ -223,7 +223,7 @@ padding: 0.5em;
   padding: 15px;
 }
 
-.content {
+.credits-content {
   display: flex;
   flex-direction: column;
 }
