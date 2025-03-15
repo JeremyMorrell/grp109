@@ -100,6 +100,7 @@ const images = [
 ];
 //Sound files
 const sound1 = new Audio('sounds/arcade-sound.wav');
+const sound2 = new Audio('sounds/sweep-sound.wav');
 
 // Initializing necessary variables to change the slides 
 let currentIndex = 0;
@@ -115,6 +116,7 @@ function updateSlide(index) {
 
 // Displays the next image and description in the array 
 function nextSlide() {
+  sound1.play();
   currentIndex++;
   currentIndex = currentIndex % images.length;
   updateSlide(currentIndex);
@@ -123,6 +125,7 @@ function nextSlide() {
 
 // Displays the previous image and description in the array
 function previousSlide() {
+  sound2.play();
   currentIndex--;
   currentIndex = currentIndex % images.length;
   updateSlide(currentIndex);
