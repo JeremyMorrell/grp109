@@ -48,6 +48,27 @@ input[type="submit"]{
   gap: 0.5em;
 }
 
+/* Link colors and blink when hovered */
+a {
+  color: #665544;
+}
+
+a:hover {
+  color: blue;
+  animation: blink 0.75s step-start infinite;
+  animation-delay: 3s;
+}
+
+a:active {
+  color: rgb(91, 30, 133);
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
 /*-- New Dice Styles: AV - 3/2 --*/                         
 
 #diceBag { /* AV - 3/1 */
