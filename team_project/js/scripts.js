@@ -127,7 +127,7 @@ function nextSlide() {
 function previousSlide() {
   sound2.play();
   currentIndex--;
-  currentIndex = currentIndex % images.length;
+  currentIndex = (currentIndex + images.length) % images.length; // Ensures a positive index 
   updateSlide(currentIndex);
   resetTimer();
 }

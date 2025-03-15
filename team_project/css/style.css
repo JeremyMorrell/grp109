@@ -248,6 +248,7 @@ padding: 0.5em;
   width: 300px;
   height: 200px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .carousel-container {
@@ -265,7 +266,6 @@ button {
   top: 50%;
   background: black;
   color: white;
-  border: none;
   padding: 10px;
   cursor: pointer;
 }
@@ -283,4 +283,5 @@ button {
   font-size: 14px;
   text-align: center;
   font-weight: bold;
+  z-index: 2;
 }
