@@ -257,7 +257,7 @@ padding: 0.5em;
 #carouselImg{
   width: 100%;
   height: auto;
-  display: none;
+  object-fit:cover;
 }
 
 button {
