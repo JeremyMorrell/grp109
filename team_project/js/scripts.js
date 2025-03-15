@@ -90,4 +90,4 @@ function updateSlide(){
   current++;
   current = current % names.length;
   nameLocation.innerText = names[current];
-}
+};
