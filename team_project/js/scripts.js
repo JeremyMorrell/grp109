@@ -134,12 +134,12 @@ function previousSlide() {
 
 // Initialize all necessary variables for the timer 
 let timer = 3;
-let interval2;
+let timerInterval;
 const time = document.getElementById("timer");
 
 // Resets the timer and its display
 function resetTimer(){
-  clearInterval(interval2)
+  clearInterval(timerInterval)
   timer = 3;
   time.textContent = timer;
   startTimer();
@@ -147,7 +147,7 @@ function resetTimer(){
 
 // Sets the timer to count down every second
 function startTimer(){
-  interval = setInterval(timerAdjustment, 1000);
+  timerInterval = setInterval(timerAdjustment, 1000);
 }
 
 // Called every second, updating the display and if the time hits zero, moves onto the next slide
