@@ -35,22 +35,28 @@
 
   .individual{
     flex: 1;
-    max-width: %;
     background-color: OldLace;
     height: 13em;
     padding: 0.5em;
-    border: 3px solid #665544;
-   
-    
+    border: 3px solid #665544;   
   }
 
-  #nav{
+/* CSS for the navigation bar */ 
+.nav{
   background-color: OldLace;
   margin: 0% auto 1%;
   padding: 0.5em;
   border: 3px solid #665544;
-  width: 90%;
+  width: 91.5%;
   text-align: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
   
   li{
