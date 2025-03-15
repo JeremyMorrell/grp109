@@ -270,11 +270,11 @@ button {
   cursor: pointer;
 }
 
-.prev {
+#prev {
   left: 0;
 }
 
-.next {
+#next {
   right: 0;
 }
 
