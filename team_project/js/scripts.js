@@ -78,16 +78,88 @@ function rollDice(diceAmount) {
 
 /* rollDice(document.getElementById('dieCount'.value)) */
 
-// JS for the carousel on the bottom left 
+/* JS for the credits on the bottom left */
 const names = ["Alan V", "Ethan N", "Jeremy M"];
 
 let current = 0;
-let interval = setInterval(updateSlide, 1500);
-let timer = 1.5;
+let interval = setInterval(updateNames, 1500);
 const nameLocation = document.getElementById("names");
 
-function updateSlide(){
+function updateNames(){
   current++;
   current = current % names.length;
   nameLocation.innerText = names[current];
 };
+
+/* JS for the carousel on the bottom right */
+// Array for objects, all containing necessary information to produce the carousel and keeps everything ordered
+const images = [ 
+    {src: "images/beach1.jpg", alt: "Sunny beach with sunset"},
+    {src: "images/beach2.jpg", alt: "Sunny beach with palm trees"},
+    {src: "images/beach3.jpg", alt: "Sunny beach with trees"},
+];
+//Sound files
+const sound1 = new Audio('sounds/arcade-sound.wav');
+
+// Initializing necessary variables to change the slides 
+let currentIndex = 0;
+const carouselImg = document.getElementById("carouselImg");
+const pButton = document.getElementById("prev");
+const nButton = document.getElementById("next");
+
+// Changes the slide to the "next" slide by changing the image and description to the next in the array
+function updateSlide(index) {
+  carouselImg.src = images[index].src;
+  carouselImg.alt = images[index].alt;
+}
+
+// Displays the next image and description in the array 
+function nextSlide() {
+  currentIndex++;
+  currentIndex = currentIndex % images.length;
+  updateSlide(currentIndex);
+  resetTimer();
+}
+
+// Displays the previous image and description in the array
+function previousSlide() {
+  currentIndex--;
+  currentIndex = currentIndex % images.length;
+  updateSlide(currentIndex);
+  resetTimer();
+}
+
+// Initialize all necessary variables for the timer 
+let timer = 3;
+let interval2;
+const time = document.getElementById("timer");
+
+// Resets the timer and its display
+function resetTimer(){
+  clearInterval(interval2)
+  timer = 3;
+  time.textContent = timer;
+  startTimer();
+}
+
+// Sets the timer to count down every second
+function startTimer(){
+  interval = setInterval(timerAdjustment, 1000);
+}
+
+// Called every second, updating the display and if the time hits zero, moves onto the next slide
+function timerAdjustment(){
+  timer--;
+  time.textContent = timer;
+  if (timer === 0){
+    nextSlide();
+  }
+}
+
+// Event listeners for the next and previous buttons to call the correct function 
+pButton.addEventListener("click", previousSlide);
+nButton.addEventListener("click", nextSlide);
+
+// Necessary function calls for correct display when the website opens
+updateSlide(currentIndex);
+startTimer();
