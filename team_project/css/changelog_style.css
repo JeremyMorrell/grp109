@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Verdana, sans-serif;
-    color: #665544;
+    color: #413830;
     text-align: center;
   }
   
@@ -8,7 +8,7 @@
     font-family: 'MontserratBold';
     font-weight: normal;
     font-style: normal;
-    color: #665544
+    color: #413830
   }
   
   .container {
@@ -16,7 +16,7 @@
     background-color: #fdfaf4;
     height: 17em;
     padding: 0.5em;
-    border: 3px solid #665544;
+    border: 3px solid #413830;
     
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     background-color: #fdfaf4;
     height: 13em;
     padding: 0.5em;
-    border: 3px solid #665544;   
+    border: 3px solid #413830;   
   }
 
 /* CSS for the navigation bar */ 
@@ -46,7 +46,7 @@
   background-color: #fdfaf4;
   margin: 0% auto 1%;
   padding: 0.5em;
-  border: 3px solid #665544;
+  border: 3px solid #413830;
   width: 91.5%;
   text-align: center;
   }
