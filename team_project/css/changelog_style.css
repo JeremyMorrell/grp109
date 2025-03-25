@@ -13,7 +13,7 @@
   
   .container {
     width: 90%;
-    background-color: OldLace;
+    background-color: #fdfaf4;
     height: 17em;
     padding: 0.5em;
     border: 3px solid #665544;
@@ -35,7 +35,7 @@
 
   .individual{
     flex: 1;
-    background-color: OldLace;
+    background-color: #fdfaf4;
     height: 13em;
     padding: 0.5em;
     border: 3px solid #665544;   
@@ -43,7 +43,7 @@
 
 /* CSS for the navigation bar */ 
 .nav{
-  background-color: OldLace;
+  background-color: #fdfaf4;
   margin: 0% auto 1%;
   padding: 0.5em;
   border: 3px solid #665544;
